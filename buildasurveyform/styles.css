@@ -1,0 +1,76 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-color: lightgray;
+}
+
+fieldset {
+    border: none;
+    margin: 0.5rem;
+}
+
+form {
+    width: 70vw; /* stands for viewport width , 70% */
+    max-width: 700px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    background-color: darkgray;
+    color: white;
+    font-weight: bold;
+    font-size: 20;
+}
+
+input,
+textarea {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  border: 2px solid black;
+  border-radius: 7px; 
+  color: rgb(104, 104, 104);
+  font-size: 0.9em;
+}
+
+select {
+    margin: 0;
+    width: 100%;
+    min-height: 2.4em;
+    border-radius: 7px;
+    border: 2px solid black;
+    color: rgb(104, 104, 104);
+    font-size: 0.9em;
+
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+legend {
+    text-decoration: underline;
+    
+}
+h1, p {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(104, 104, 104);
+  }
+
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 50%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: orange;
+    border-color: rgb(37, 37, 37);
+    min-width: 300px; 
+}

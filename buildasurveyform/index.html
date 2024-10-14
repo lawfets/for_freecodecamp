@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>build a survey form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">survey form for me</h1>
+        <p id="description">I just ask these questions out of curiosity.</p>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Insert your name: <input id="name" type="text" placeholder="your name" required /></label>
+                <label for="email" id="email-label">Insert your e-mail-address: <input id="email" type="email" placeholder="your email address" required /></label>
+                <label for="number" id="number-label">Insert your age: (minimum age 14)<input id="number" type="number" min="14" max="120" placeholder="your age" /></label>
+            </fieldset>
+            <fieldset>
+                <legend>What is your gender?</legend>
+                <label for="gender" id="gender-label">
+                    <select id="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                        <option value="non-binary">non-binary</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>What's your favorite animal?</legend>
+                <label for="dogs"><input id="dogs" type="radio" name="animal" value="dogs" class="inline" checked />I like dogs</label>
+                <label for="cats"><input id="cats" type="radio" name="animal" value="cats" class="inline" />I like cats</label>
+                <label for="other animal"><input id="other animal" type="radio" name="animal" value="other animal" class="inline" />I have another animal</label>
+                <label for="no animal"><input id="no animal" type="radio" name="animal" value="no animal" class="inline" />I have no animals</label>
+            </fieldset>
+            <fieldset>
+                <legend>What's your full time occupation?</legend>
+                <label for="handwork"><input id="handwork" value="handwork" type="checkbox" class="inline" />I work with my hands</label>
+                <label for="headwork"><input id="headwork" value="headwork" type="checkbox" class="inline" />I work with my head</label>
+            </fieldset>
+            <fieldset>
+                <legend>Can you please elaborate on your full time occupation: </legend> 
+                <label for="explanation"><textarea id="explanation" name="explanation" value="explanation" rows="3" cols="30" placeholder="I code on the beach with a coconut coctail on the table"></textarea></label>
+                <input type="submit" id="submit" value="submit" />
+            </fieldset>
+
+        </form>
+    </body>
+</html>
