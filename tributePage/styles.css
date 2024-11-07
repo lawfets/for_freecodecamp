@@ -1,0 +1,50 @@
+body {
+    line-height: 22px;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #0a0a23;
+}
+
+.fig {
+  max-width: 300px;
+  max-height: 225px;
+  margin: 0 auto;
+  text-align: center;
+}
+#img-caption {
+  color: #0a0a23;
+  font-style: italic;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 25%;
+}
+
+#tribute-info {
+  text-align: center;
+}
+
+ul {
+ text-align: left;
+ max-width: 800px;
+ margin: 15px auto;
+ color: #0a0a23;
+
+}
+
+a {
+  color: #0a0a23;
+}
+
+@media (max-width: 670px) {
+  h1 {
+      line-height: 28px;
+  }
+}
